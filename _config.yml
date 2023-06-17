@@ -34,7 +34,7 @@ sphinx:
         use_issues_button: true
         use_repository_button: true
         use_edit_page_button: true
-        notebook_interface: "jupyterlab"
-        binderhub_url: "https://mybinder.org"
+        notebook_interface: jupyterlab
+        binderhub_url: https://mybinder.org
         thebe: true
 
