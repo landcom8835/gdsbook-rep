@@ -1,0 +1,7 @@
+# Table of contents
+
+format: jb-book
+root: intro
+chapters:
+- file: 第一章开放地理科学基础-4P
+- file: 第二章几何对象模型-4P
