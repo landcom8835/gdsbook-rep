@@ -32,16 +32,12 @@ bibtex_bibfiles:
   - references.bib
 
 # Information about where the book exists on the web
-repository:
-  url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book
-  branch: gh-pages  # Which branch of the repository should be used when creating links (optional)
+sphinx:
+    config:
+      html_theme_options:
+        use_download_button: false
+        repository_url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book
+        use_issues_button: true
+        use_repository_button: true
+        use_edit_page_button: true
 
-#######################################################################################
-# HTML-specific settings
-html:
-  favicon: "icon.png"
-  baseurl: "https://landcom8835.github.io/gdsbook-rep/" # The base URL where your book will be hosted.
-  use_repository_button: true
-  use_issues_button: true
-  use_edit_page_button: true
-  use_download_button: false
