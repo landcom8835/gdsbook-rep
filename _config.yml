@@ -3,10 +3,8 @@ title: 地理空间数据科学基础12
 author: 兰小机 吴启用 石林
 copyright: "2023" # Copyright year to be placed in the footer
 logo: logo.png # A path to the book logo
-
+email: landcom8835@163.com
 #######################################################################################
-# Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-# exclude_patterns: [ ]
 # Auto-exclude files not in the toc
 only_build_toc_files: true
 
@@ -16,17 +14,35 @@ only_build_toc_files: true
 execute:
   execute_notebooks: force
 
-# Information about where the book exists on the web
-sphinx:
-    config:
-      html_theme_options:
-        use_download_button: false
-        repository_url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book
-        use_issues_button: true
-        use_repository_button: true
-        use_edit_page_button: true
 
 launch_buttons:  
   notebook_interface: "jupyterlab"
   binderhub_url: "https://mybinder.org"
   thebe: true
+
+#######################################################################################
+# HTML-specific settings
+html:
+  baseurl: "https://landcom8835.github.io/gdsbook-rep/" # The base URL where your book will be hosted.
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  use_download_button: false  
+
+repository:
+  url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
+
+# Information about where the book exists on the web
+sphinx:
+  config:
+    html_theme_options:
+      use_download_button: false
+      repository_url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
+      use_issues_button: true
+      use_repository_button: true
+      use_edit_page_button: true
+      launch_buttons: {
+        binderhub_url: "https://mybinder.org",
+        thebe: true
+        }
+
