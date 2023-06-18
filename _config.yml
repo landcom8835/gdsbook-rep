@@ -31,6 +31,7 @@ html:
 
 repository:
   url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
+  branch: gh-pages
 
 # Information about where the book exists on the web
 sphinx:
