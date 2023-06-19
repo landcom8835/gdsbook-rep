@@ -14,7 +14,6 @@ only_build_toc_files: true
 execute:
   execute_notebooks: force
 
-
 launch_buttons:  
   notebook_interface: "jupyterlab"
   binderhub_url: "https://mybinder.org"
@@ -31,7 +30,7 @@ html:
 
 repository:
   url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
-  branch: HEAD
+  branch: main
 
 # Information about where the book exists on the web
 sphinx:
