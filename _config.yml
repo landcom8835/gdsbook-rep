@@ -13,11 +13,7 @@ only_build_toc_files: true
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
-
-launch_buttons:  
-  notebook_interface: "jupyterlab"
-  binderhub_url: "https://mybinder.org"
-  thebe: true
+  timeout: 600    # The maximum time (in seconds) each notebook cell is allowed to run.
 
 #######################################################################################
 # HTML-specific settings
@@ -28,21 +24,14 @@ html:
   use_edit_page_button: true
   use_download_button: false  
 
+#######################################################################################
+# Launch button settings
+launch_buttons:  
+  notebook_interface: "jupyterlab"
+  jupyterhub_url: https://datahub.berkeley.edu
+  binderhub_url: "https://mybinder.org"
+  thebe: true
+
 repository:
   url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
   branch: main
-
-# Information about where the book exists on the web
-sphinx:
-  config:
-    html_theme_options:
-      use_download_button: false
-      repository_url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
-      use_issues_button: true
-      use_repository_button: true
-      use_edit_page_button: true
-      launch_buttons: {
-        binderhub_url: "https://mybinder.org",
-        thebe: true
-        }
-
