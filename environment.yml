@@ -27,3 +27,5 @@ dependencies:
   - hvplot
   - geoviews
   - pyepsg
+  - pip:
+    - jupyterlab-myst
