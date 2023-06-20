@@ -15,18 +15,6 @@ execute:
   execute_notebooks: force
   timeout: 600    # The maximum time (in seconds) each notebook cell is allowed to run.
 
-# Information about where the book exists on the web
-sphinx:
-  config:
-    html_theme_options:
-      repository_url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
-      repository_branch: main
-      use_download_button: false  
-      use_issues_button: true
-      use_repository_button: true
-      use_edit_page_button: true
-      use_source_button: true
-
 repository:
   url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
   branch: main
@@ -37,3 +25,14 @@ launch_buttons:
   notebook_interface: "jupyterlab"  
   binderhub_url: "https://mybinder.org"
   thebe: true
+
+#######################################################################################
+# HTML-specific settings
+html:
+  baseurl: "https://landcom8835.github.io/gdsbook-rep/" # The base URL where your book will be hosted.
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  use_download_button: false
+
+
