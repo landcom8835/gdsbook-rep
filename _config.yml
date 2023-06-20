@@ -15,17 +15,6 @@ execute:
   execute_notebooks: force
   timeout: 600    # The maximum time (in seconds) each notebook cell is allowed to run.
 
-#######################################################################################
-# Launch button settings
-launch_buttons:  
-  notebook_interface: "jupyterlab"  
-  binderhub_url: "https://mybinder.org"
-  thebe: true
-
-# repository:
-  # url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
-  # branch: main
-
 # Information about where the book exists on the web
 sphinx:
   config:
@@ -37,3 +26,10 @@ sphinx:
       use_repository_button: true
       use_edit_page_button: true
       use_source_button: true
+
+#######################################################################################
+# Launch button settings
+launch_buttons:  
+  notebook_interface: "jupyterlab"  
+  binderhub_url: "https://mybinder.org"
+  thebe: true
