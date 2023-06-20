@@ -27,6 +27,10 @@ sphinx:
       use_edit_page_button: true
       use_source_button: true
 
+repository:
+  url: https://github.com/landcom8835/gdsbook-rep/  # Online location of this book repository
+  branch: main
+
 #######################################################################################
 # Launch button settings
 launch_buttons:  
